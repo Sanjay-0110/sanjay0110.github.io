@@ -13,13 +13,32 @@
   --accent: #4af6a8;       /* terminal green */
   --accent-dim: #1a3d2c;
   --accent-blue: #5b9cf6;  /* syntax blue */
-  --accent-yellow: #facc15; /* syntax yellow */
   --accent-orange: #f6a44a; /* syntax orange */
   --accent-purple: #b78cf6; /* syntax purple */
   --font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace;
   --font-sans: "DM Sans", system-ui, sans-serif;
   --radius: 2px;
 }
+
+/* ─── Light theme ────────────────────────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg: #f5f4f0;
+  --bg-subtle: #eeece8;
+  --bg-card: #edeae5;
+  --border: #d8d4cc;
+  --border-hover: #c0bbb2;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555550;
+  --text-muted: #999990;
+  --accent: #1a7a4a;
+  --accent-dim: #d0ece0;
+  --accent-blue: #1a4fa0;
+  --accent-orange: #b85a00;
+  --accent-purple: #6a3ab0;
+}
+
+/* ─── Smooth theme transition ────────────────────────────────────────────────── */
+html { transition: background-color 0.2s ease; }
 
 /* ─── Base ───────────────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

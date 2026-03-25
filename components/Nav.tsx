@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { navigation, profile } from "@/data/siteData";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Nav() {
   const path = usePathname();
@@ -82,6 +83,8 @@ export default function Nav() {
               );
             })}
           </nav>
+
+          <ThemeToggle />
 
           {/* Hamburger button — mobile only */}
           <button
