@@ -40,17 +40,19 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${jetbrainsMono.variable} ${dmSans.variable}`}>
       <head>
+        <link rel="icon" href="/profile.png" />
+        <link rel="apple-touch-icon" href="/profile.png" />
         {GA_ID && (
-  <>
+        <>
           <script
             async
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           />
           <script
-              defer
-              src={`/ga-init.js?id=${GA_ID}`}
+            defer
+            src={`/ga-init.js?id=${GA_ID}`}
           />
-  </>
+        </>
 )}
         {/* Anti-flash: apply saved theme before first paint */}
         <script
